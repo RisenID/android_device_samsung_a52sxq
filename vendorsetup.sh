@@ -59,5 +59,4 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export FOX_VERSION="R11.1_3"
         export OF_FL_PATH1="/tmp/flashlight" # See /init.recovery.qcom.rc for more information
         export OF_FL_PATH2=""
-        export FOX_USE_SPECIFIC_MAGISK_ZIP=~/android/ofox_12.1/device/samsung/a52sxq/26.4-kitsune.apk
 fi
