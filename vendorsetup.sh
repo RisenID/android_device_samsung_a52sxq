@@ -36,7 +36,9 @@ fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export ALLOW_MISSING_DEPENDENCIES="true"
+        export FOX_NO_SAMSUNG_SPECIAL="1"
         export OF_DISABLE_MIUI_SPECIFIC_FEATURES="1"
+        export FOX_VANILLA_BUILD="1"
         export OF_DONT_PATCH_ENCRYPTED_DEVICE="1"
         export OF_SCREEN_H="2400"
         export OF_STATUS_H="140"
@@ -53,10 +55,11 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
         export FOX_USE_SED_BINARY="1"
         export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER="1"
         export FOX_USE_XZ_UTILS="1"
-        export FOX_VARIANT="A12"
+        export FOX_VARIANT="A14"
         export OF_MAINTAINER="Risen"
         export FOX_BUILD_TYPE="Stable"
         export FOX_VERSION="R11.1_3"
         export OF_FL_PATH1="/tmp/flashlight" # See /init.recovery.qcom.rc for more information
-        export OF_FL_PATH2=""
+        export FOX_DELETE_MAGISK_ADDON="1"
+        export OF_USE_GREEN_LED="0"
 fi
